@@ -4,4 +4,10 @@ rvm: 2.6.3
 jobs:
   include:
     - stage: "echo BAZ"
-      script: echo Test
+      script:
+        - sleep 160
+        - echo Test
+    - stage: another
+      script:
+        - sleep 100
+        - echo Slept
